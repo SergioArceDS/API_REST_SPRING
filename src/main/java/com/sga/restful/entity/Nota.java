@@ -2,9 +2,11 @@ package com.sga.restful.entity;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Table(name = "NOTA")
 @Entity
-public class Nota {
+public class Nota implements Serializable {
     @GeneratedValue
     @Id
     @Column(name = "ID_NOTA")
